@@ -19,17 +19,34 @@
 
 
 
-// Now lets bulid our logic using switch statements
+// Now lets bulid our game logic using switch statements
 
-switch ("2") {
 
-    case 1:
-        // run this code
+let playerOne = "rock";
+let computer = "rock";
+
+
+switch (playerOne) {
+        
+    case computer:
+        console.log("its a tie")
         break;
 
-    case 2:
-        // run this code
+    case "rock":
+        if (computer === "paper"){
+            console.log("computer wins!")
+        } else {
+            console.log("playerOne wins!")
+        }
         break;
+    case "paper":
+        if (computer === "paper"){
+            console.log("computer wins!")
+        } else {
+            console.log("playerOne wins!")
+        }
+        break;
+        
 
     case 3:
         // run this code
