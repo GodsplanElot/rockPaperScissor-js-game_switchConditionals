@@ -22,8 +22,13 @@
 // Now lets bulid our game logic using switch statements
 
 
-let playerOne = "rock";
+
+
+
+let playerOne = "scissors";
 let computer = "rock";
+
+
 
 
 switch (playerOne) {
@@ -40,7 +45,7 @@ switch (playerOne) {
         }
         break;
     case "paper":
-        if (computer === "paper"){
+        if (computer === "scissors"){
             console.log("computer wins!")
         } else {
             console.log("playerOne wins!")
@@ -48,8 +53,12 @@ switch (playerOne) {
         break;
         
 
-    case 3:
-        // run this code
-        break;
+    default:
+        if (computer === "rock"){
+            console.log("computer wins!")
+        } else {
+            console.log("playerOne wins!")
+        }
+        
 
 }
